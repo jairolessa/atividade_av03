@@ -37,7 +37,7 @@ def criar_tcarros():
                        """)
         con.close()
 
-#ADICIONANDO INFORMAÇÕES NA TABELA CARS
+#ADICIONANDO INFORMAÇÕES NA TABELA CARROS
 def add_info_tcarros():
         
         print(f'{'-'*10} TELA DE CADASTRO {'-'*10}\n')
@@ -54,9 +54,9 @@ def add_info_tcarros():
                        """, (tipo, ano, qtd_portas, potencia))
         
         con.commit()
-        print('\nCarro cadastrado com sucesso!\n')
-
         con.close()
+        
+        print('\nCarro cadastrado com sucesso!\n')
 
 #LISTANDO TODOS OS CARROS NO BANCO DE DADOS
 def listar_carros():
