@@ -1,6 +1,7 @@
 import sqlite3
 import os
 
+#CONECTANDO-SE AO BANCO DE DADOS
 def conectar_db():
 
         con = None
@@ -13,10 +14,6 @@ def conectar_db():
                 print('Erro na conexão com o Banco de Dados')
 
         return con, cursor
-
-#comn = sqlite3.connect("db.sqlite")
-#cursor = comn.cursor()
-
 
 #LIMPANDO O TERMINAL
 def limpar_tela():
